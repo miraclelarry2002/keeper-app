@@ -6,7 +6,7 @@ import List from "./lists";
 import Axios from 'axios';
 import "./App.css"
 
-const SERVER_URL = import.meta.env.SERVER_URL || "http://localhost:3000"
+const SERVER_URL = import.meta.env.SERVER_URL
 function App(){
 
     const [keeperarray, setkeeperarray] = useState([])
