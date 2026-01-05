@@ -6,7 +6,8 @@ import List from "./lists";
 import Axios from 'axios';
 import "./App.css"
 
-const SERVER_URL = import.meta.env.SERVER_URL
+const VITE_SERVER_URL = import.meta.env.VITE_SERVER_URL
+
 function App(){
 
     const [keeperarray, setkeeperarray] = useState([])
@@ -15,7 +16,6 @@ function App(){
         //// //////////////////////////// to pass data to the server from the front end ////////////////////////////////
         Axios.post(`${VITE_SERVER_URL}/additem`, item).then((res)=>console.log(res.data))
     }
-
 
     ////////////////////// use of useEffect;
     useEffect(()=>{
