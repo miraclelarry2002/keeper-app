@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cors())
 require('dotenv').config();
 
-app.use(express.static(path.join(__dirname, "dist")))
+app.use(express.static(path.join(__dirname, "../my-react-app/dist")))
 ////////////////   SETTING UP OUR DATABASE ///////////////////////////////////////
 /////// mongoose connecting to the server ////////////////////////////////////////////
 mongoose.connect(process.env.URL).then(()=>{
@@ -24,7 +24,7 @@ const KeeperSchema = new mongoose.Schema({
 const Keeper = mongoose.model("Keeper", KeeperSchema)
 
 app.get("/", (req,res)=>{
-    res.send("server is running");
+   res.sendFile(path.join(__dirname,"../my-react-app/dist","index.html"))
 })
 
 app.get("/getitem", async(req,res)=>{
