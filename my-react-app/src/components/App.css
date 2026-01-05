@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+html{
+    width: 100vw;
+    background-image: linear-gradient(-15deg, rgb(22, 0, 37),  rgb(174, 99, 224));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: auto;
+    min-height: 100vh;
+    
+}
+
+.heading{
+    width: 100%;
+    background-image: linear-gradient(-90deg, rgb(230, 192, 255), rgb(255, 255, 255));
+    padding: 20px 0px 20px 0px;
+}
+.heading h1{
+    margin-left: 20px;
+    color: rgb(174, 99, 224);
+}
+textarea{
+    resize: none;
+    padding: 5px;
+    outline: none;
+    border: transparent;
+}
+textarea:focus{
+    outline: none;
+    border:transparent;
+}
+.sub-body{
+    width: 95vw;
+    margin: auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-width: 200px;
+    width:50vw ;
+    border-radius: 5px;
+    outline: 4px solid rgb(174, 99, 224);
+    box-shadow: 3px 3px 4px rgba(15, 15, 15, 0.5);
+    margin-top: 10px;
+}
+.list-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+    grid-auto-flow: minmax(100px, auto);
+    grid-auto-flow: dense;
+    gap: 10px;
+    padding-top: 30px;
+    margin: auto;
+    width: 90%;
+}
+.item{
+    max-width: 250px;
+    background-color: rgb(230, 192, 255);
+    padding: 10px;
+    border-radius: 4px;
+    overflow-wrap: break-word;
+    max-height: fit-content;
+}
+
+.del-btn{
+    text-align: right;
+    filter: hue-rotate(30deg);
+}
+main{
+    flex: 1;
+    
+
+}
+footer{
+    display: flex;
+    color: rgba(227, 185, 255, 0.296);
+    font-size: 17px;
+    margin-bottom: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+.add:hover{
+    background-color: rgb(242, 222, 255);
+    transition: all .21s ease-out;
+    scale: 0.9;
+}
+.big-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-width: 200px;
+    width:50vw ;
+}
