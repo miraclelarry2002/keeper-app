@@ -19,7 +19,7 @@ function App(){
 
     ////////////////////// use of useEffect;
     useEffect(()=>{
-        Axios.get(`${SERVER_URL}/getitem`).then((res)=>{
+        Axios.get(`${SERVER_URL}getitem`).then((res)=>{
             setkeeperarray(res.data.data)
         })
     },[keeperarray])
